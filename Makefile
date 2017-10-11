@@ -114,7 +114,7 @@ exit.h buffer.h
 	./compile install.c
 
 instcheck: \
-load instcheck.o hier.o auto_home.o strerr.a substdio.a error.a str.a
+install load instcheck.o hier.o auto_home.o strerr.a substdio.a error.a str.a
 	./load instcheck hier.o auto_home.o strerr.a substdio.a \
 	error.a str.a
 
@@ -387,7 +387,7 @@ compile taia_tai.c taia.h tai.h uint64.h
 	./compile taia_tai.c
 
 tempfile.o: \
-compile tempfile.c
+compile tempfile.c uint64.h
 	./compile tempfile.c
 
 uint32.h: \
